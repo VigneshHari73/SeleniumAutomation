@@ -2,7 +2,7 @@
     <test name="LoginTests">
     <groups>
       <run>
-      <include name = "sanity"/>
+      <include name = "sanity, regression"/>
       </run>    
     </groups>
         <classes>
