@@ -1,5 +1,10 @@
-<suite name="LoginSuite">
+<suite parallel = "false"  name="LoginSuite">
     <test name="LoginTests">
+    <groups>
+      <run>
+      <include name = "sanity"/>
+      </run>    
+    </groups>
         <classes>
             <class name="tests.LoginTest"/>
         </classes>

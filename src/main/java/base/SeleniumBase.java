@@ -13,18 +13,18 @@ public class SeleniumBase {
 	
 	protected WebDriver driver;
 	
-	@BeforeMethod
+	@BeforeMethod(groups= {"sanity"})
 	public void setUp() {
 		
 		driver = new ChromeDriver();
 		Log.info("String the web browse");
-		driver.get("https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F");
+		driver.get("https://selectorshub.com/xpath-practice-page/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
 	}
 	
-	@AfterMethod
+	@AfterMethod(groups= {"sanity"})
 	public void tearDown() {
 		
 		if(driver != null) {
