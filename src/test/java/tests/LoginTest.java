@@ -9,38 +9,38 @@ public class LoginTest extends SeleniumBase {
 	
 	@Test(priority = 2)
 	public void loginVlaidaton() {
-		LoginPage logIn = new LoginPage(driver);
+		LoginPage logIn = new LoginPage(driver.get());
 
 		logIn.enterUsername("admin@yourstore.com");
 		logIn.enterPassword("admin");
 		logIn.verifyTitle();
 		
-		System.out.println(" Page title is"+driver.getTitle());
+		System.out.println(" Page title is"+driver.get().getTitle());
 	}
 	
 	
-	@Test(groups= {"sanity, regression"}, priority = 1)
+	@Test(groups= {"smoke"}, priority = 1)
 	public void loginVlaidatonNegative() {
-		LoginPage logIn = new LoginPage(driver);
+		LoginPage logIn = new LoginPage(driver.get());
 
 	    logIn.verifyTitle();
-		System.out.println(" Page title is for regression an sanity"+driver.getTitle());
+		System.out.println(" Page title is for smoke an sanity "+driver.get().getTitle());
 	}
 	
-	@Test(groups= {"Regression"},priority = 1)
+	@Test(dependsOnGroups = {"sanity"}, groups= {"regression"},priority = 1)
 	public void loginVlaidatonNegative1() {
-		LoginPage logIn = new LoginPage(driver);
+		LoginPage logIn = new LoginPage(driver.get());
 
 	    logIn.verifyTitle();
-		System.out.println(" Page title is for Regression"+driver.getTitle());
+		System.out.println(" Page title is for Regression "+driver.get().getTitle());
 	}
 	
-	@Test(groups= {"Smoke"},priority = 1)
+	@Test(dependsOnGroups = {"smoke"}, groups= {"sanity"},priority = 1)
 	public void loginVlaidatonNegative3() {
-		LoginPage logIn = new LoginPage(driver);
+		LoginPage logIn = new LoginPage(driver.get());
 
 	    logIn.verifyTitle();
-		System.out.println(" Page title is Smoke"+driver.getTitle());
+		System.out.println(" Page title is sanity "+driver.get().getTitle());
 	}
 
 }

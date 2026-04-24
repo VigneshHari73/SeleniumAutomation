@@ -17,3 +17,19 @@
 2026-04-23 23:55:13 [main] INFO  Log - Closing the browser
 2026-04-24 00:00:52 [main] INFO  Log - String the web browse
 2026-04-24 00:00:56 [main] INFO  Log - Closing the browser
+2026-04-24 07:42:12 [TestNG-test-LoginTests-1] INFO  Log - String the web browse
+2026-04-24 07:42:17 [TestNG-test-LoginTests-1] INFO  Log - Closing the browser
+2026-04-24 07:44:46 [TestNG-test-LoginTests-1] INFO  Log - String the web browse
+2026-04-24 07:44:46 [TestNG-test-LoginTests-2] INFO  Log - String the web browse
+2026-04-24 07:44:53 [TestNG-test-LoginTests-2] INFO  Log - Closing the browser
+2026-04-24 07:44:53 [TestNG-test-LoginTests-1] INFO  Log - Closing the browser
+2026-04-24 07:59:47 [TestNG-test-LoginTests-1] INFO  Log - String the web browse
+2026-04-24 07:59:47 [TestNG-test-LoginTests-2] INFO  Log - String the web browse
+2026-04-24 07:59:53 [TestNG-test-LoginTests-2] INFO  Log - Closing the browser
+2026-04-24 07:59:54 [TestNG-test-LoginTests-1] INFO  Log - Closing the browser
+2026-04-24 08:06:52 [main] INFO  Log - String the web browse
+2026-04-24 08:06:57 [main] INFO  Log - Closing the browser
+2026-04-24 08:06:59 [main] INFO  Log - String the web browse
+2026-04-24 08:07:02 [main] INFO  Log - Closing the browser
+2026-04-24 08:07:04 [main] INFO  Log - String the web browse
+2026-04-24 08:07:08 [main] INFO  Log - Closing the browser

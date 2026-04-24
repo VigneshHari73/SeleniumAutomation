@@ -1,11 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="4" passed="0" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-24T00:02:45 IST" name="LoginSuite" finished-at="2026-04-24T00:02:45 IST" duration-ms="18">
+  <suite started-at="2026-04-24T08:06:49 IST" name="LoginSuite" finished-at="2026-04-24T08:07:08 IST" duration-ms="19784">
     <groups>
+      <group name="regression">
+        <method signature="LoginTest.loginVlaidatonNegative1()[pri:1, instance:tests.LoginTest@48f2bd5b]" name="loginVlaidatonNegative1" class="tests.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginTest.loginVlaidatonNegative()[pri:1, instance:tests.LoginTest@48f2bd5b]" name="loginVlaidatonNegative" class="tests.LoginTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="LoginTest.loginVlaidatonNegative3()[pri:1, instance:tests.LoginTest@48f2bd5b]" name="loginVlaidatonNegative3" class="tests.LoginTest"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2026-04-24T00:02:45 IST" name="LoginTests" finished-at="2026-04-24T00:02:45 IST" duration-ms="18">
+    <test started-at="2026-04-24T08:06:49 IST" name="LoginTests" finished-at="2026-04-24T08:07:08 IST" duration-ms="19784">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@48f2bd5b]" started-at="2026-04-24T08:06:49 IST" name="setUp" finished-at="2026-04-24T08:06:57 IST" duration-ms="7831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginVlaidatonNegative()[pri:1, instance:tests.LoginTest@48f2bd5b]" started-at="2026-04-24T08:06:57 IST" name="loginVlaidatonNegative" finished-at="2026-04-24T08:06:57 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginVlaidatonNegative -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@48f2bd5b]" started-at="2026-04-24T08:06:57 IST" name="tearDown" finished-at="2026-04-24T08:06:57 IST" duration-ms="425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@48f2bd5b]" started-at="2026-04-24T08:06:57 IST" name="setUp" finished-at="2026-04-24T08:07:02 IST" duration-ms="5342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginVlaidatonNegative3()[pri:1, instance:tests.LoginTest@48f2bd5b]" started-at="2026-04-24T08:07:02 IST" name="loginVlaidatonNegative3" depends-on-groups="smoke" finished-at="2026-04-24T08:07:02 IST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginVlaidatonNegative3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@48f2bd5b]" started-at="2026-04-24T08:07:02 IST" name="tearDown" finished-at="2026-04-24T08:07:03 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@48f2bd5b]" started-at="2026-04-24T08:07:03 IST" name="setUp" finished-at="2026-04-24T08:07:08 IST" duration-ms="5399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginVlaidatonNegative1()[pri:1, instance:tests.LoginTest@48f2bd5b]" started-at="2026-04-24T08:07:08 IST" name="loginVlaidatonNegative1" depends-on-groups="sanity" finished-at="2026-04-24T08:07:08 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginVlaidatonNegative1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@48f2bd5b]" started-at="2026-04-24T08:07:08 IST" name="tearDown" finished-at="2026-04-24T08:07:08 IST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
     </test> <!-- LoginTests -->
   </suite> <!-- LoginSuite -->
 </testng-results>

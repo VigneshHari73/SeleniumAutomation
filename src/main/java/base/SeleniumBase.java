@@ -11,25 +11,32 @@ import utils.Log;
 
 public class SeleniumBase {
 	
-	protected WebDriver driver;
+	protected static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
+
+	public WebDriver getDriver() {
+	    return driver.get();
+	}
+
 	
-	@BeforeMethod(groups= {"sanity"})
+	
+	@BeforeMethod(groups= {"sanity", "regression"}, alwaysRun=true)
 	public void setUp() {
 		
-		driver = new ChromeDriver();
+		driver.set(new ChromeDriver());
 		Log.info("String the web browse");
-		driver.get("https://selectorshub.com/xpath-practice-page/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.get().get("https://selectorshub.com/xpath-practice-page/");
+		driver.get().manage().window().maximize();
+		driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
 	}
 	
-	@AfterMethod(groups= {"sanity"})
+	@AfterMethod(groups= {"sanity","regression"}, alwaysRun=true)
 	public void tearDown() {
 		
 		if(driver != null) {
 			Log.info("Closing the browser");
-			driver.quit();
+			driver.get().quit();
 		}
 	}
 	
